@@ -237,12 +237,12 @@ header nav li{
 
 .profile-koukan, .profile-shonosuke, .profile-natsumi, .profile-sora{
     right: 0;
-    bottom: 0;
+    top: 54px;
 }
 
 .profile-sota, .profile-yasuhiro, .profile-tetsuya, .profile-watnow{
     left: 0;
-    bottom: 0;
+    top: 54px;
 }
 
 .profile h2{
