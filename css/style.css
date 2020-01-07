@@ -1,0 +1,317 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 共通部分 */
+
+html {
+  /* 主要なブラウザのデフォルトフォントサイズは16pxなので一旦それをhtml全体に指定する */
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #fff;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.header ,.footer {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.menu, .title{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.title:hover, .menu:hover{
+    color: #aaa;
+}
+
+.title:active, .menu:active{
+    color: #777;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav li{
+    display: inline-block;
+}
+
+.current {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.main{
+    padding-top: 54px;
+}
+
+/* HOME */
+.main-image{
+    vertical-align: bottom;
+}
+.home{
+    position: relative;
+}
+.home .beCreator{
+    position: absolute;
+    background: linear-gradient(transparent 0, #000 0);
+    font-size: 72px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.be{
+    bottom: 182px;
+    left: 40px;
+}
+.creator{
+    bottom: 40px;
+    left: 40px;
+}
+
+/* NEWS */
+.news{
+    margin: 40px;
+}
+
+.article{
+    background-color: #222;
+    margin: 40px 10% 40px 10%;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+
+.article-title{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.article-description{
+    font-size: 12px;
+}
+
+.article-continue{
+    color: #fff;
+    text-decoration-line: underline;
+    font-size: 10px;
+}
+
+.article-continue:hover{
+    color: #aaa;
+}
+
+.article-continue:active{
+    color: #777;
+}
+
+.page-btns{
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.page-btn{
+    display: inline-block;
+    background-color: #000;
+    font-weight: bold;
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.page-btn:hover{
+    background-color: #777;
+}
+
+.page-btn:active{
+    background-color: #aaa;
+}
+
+.page-btn a{
+    color: #fff;
+}
+
+/* ABOUT */
+.box{
+    background-color: #222;
+    margin: 160px 10% 160px 10%;
+    padding: 30px 10%;
+    border-radius: 4px;
+}
+
+.box li{
+    margin: 10px 0;
+}
+
+.about-menu{
+    color: #fff;
+}
+
+.about-menu:hover{
+    color: #aaa;
+}
+
+.about-menu:active{
+    color: #777;
+}
+
+/* profile */
+.f-container{
+    display: flex;
+    list-style-type: none;
+}
+
+.f-item img{
+    vertical-align: bottom;
+}
+
+.f-item{
+    flex-basis: 25%;
+    filter: grayscale(100%);
+}
+
+.f-item:hover{
+    filter: grayscale(0);
+    opacity: 0.8;
+}
+
+.profiles{
+    position: relative;
+}
+
+.profile{
+    display: none;
+    width: 50%;
+    position: absolute;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+.profile.active{
+    display: block;
+}
+
+.profile-koukan, .profile-shonosuke, .profile-natsumi, .profile-sora{
+    right: 0;
+    bottom: 0;
+}
+
+.profile-sota, .profile-yasuhiro, .profile-tetsuya, .profile-watnow{
+    left: 0;
+    bottom: 0;
+}
+
+.profile h2{
+    font-size: 32px;
+}
+
+.close-btn{
+    color: #fff;
+}
+
+.close-btn i{
+    right: 0;
+}
+
+.close-btn:hover{
+    color: #aaa;
+}
+
+.close-btn:active{
+    color: #777;
+}
+
+
+/* CONTACT */
+.form-title{
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.form-description{
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+.contact-form{
+    background-color: #222;
+    margin: 40px 10% 40px 10%;
+    padding: 20px 30px;
+    border-radius: 4px;
+}
+.form-q{
+    font-size:15px;
+}
+input{
+    width: 50%;
+}
+textarea{
+    width: 100%;
+}
+input, textarea, select{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding:10px;
+    border:none;
+    background-color: #000;
+    color: #fff;
+    font-size:16px;
+    border-radius: 4px;
+}
+.form-address{
+    width: 80%;
+}
+.contact-submit{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff ;
+    width: 100px;
+}
+.contact-submit:hover{
+    background-color: #555;
+}
+.contact-submit:active{
+    background-color: #777;
+}
