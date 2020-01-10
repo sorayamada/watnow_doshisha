@@ -10,7 +10,7 @@ html {
   /* 主要なブラウザのデフォルトフォントサイズは16pxなので一旦それをhtml全体に指定する */
     font-size: 62.5%;
 }
-body{
+body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -23,7 +23,7 @@ body{
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
@@ -34,7 +34,8 @@ img {
     max-width: 100%;
 }
 
-.header ,.footer {
+.header,
+.footer {
     background-color: #000;
     color: #fff;
     display: inline-block;
@@ -44,29 +45,32 @@ img {
     padding:0 5px;
 }
 
-.header{
+.header {
     position: fixed;
     width: 100%;
     z-index: 9999;
 }
 
-.title{
+.title {
     font-weight: bold;
     font-size: 32px;
 }
 
-.menu, .title{
+.menu,
+.title {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     padding: 0 4px;
 }
 
-.title:hover, .menu:hover{
+.title:hover,
+.menu:hover {
     color: #aaa;
 }
 
-.title:active, .menu:active{
+.title:active,
+.menu:active {
     color: #777;
 }
 
@@ -75,7 +79,7 @@ header ul {
     align-items: center;
 }
 
-header nav li{
+header nav li {
     display: inline-block;
 }
 
@@ -84,74 +88,74 @@ header nav li{
     border-bottom: 2px solid #fff;
 }
 
-.main{
+.main {
     padding-top: 54px;
 }
 
 /* HOME */
-.main-image{
+.main-image {
     vertical-align: bottom;
 }
-.home{
+.home {
     position: relative;
 }
-.home .beCreator{
+.home .beCreator {
     position: absolute;
     background: linear-gradient(transparent 0, #000 0);
     font-size: 72px;
     font-weight: bold;
     padding: 0 20px;
 }
-.be{
+.be {
     bottom: 182px;
     left: 40px;
 }
-.creator{
+.creator {
     bottom: 40px;
     left: 40px;
 }
 
 /* NEWS */
-.news{
+.news {
     margin: 40px;
 }
 
-.article{
+.article {
     background-color: #222;
     margin: 40px 10% 40px 10%;
     padding: 20px 30px;
     border-radius: 4px;
 }
 
-.article-title{
+.article-title {
     font-size: 24px;
     padding-bottom: 10px;
 }
 
-.article-description{
+.article-description {
     font-size: 12px;
 }
 
-.article-continue{
+.article-continue {
     color: #fff;
     text-decoration-line: underline;
     font-size: 10px;
 }
 
-.article-continue:hover{
+.article-continue:hover {
     color: #aaa;
 }
 
-.article-continue:active{
+.article-continue:active {
     color: #777;
 }
 
-.page-btns{
+.page-btns {
     text-align: center;
     margin: 0 auto 40px auto;
 }
 
-.page-btn{
+.page-btn {
     display: inline-block;
     background-color: #000;
     font-weight: bold;
@@ -162,67 +166,67 @@ header nav li{
     line-height: 32px;
 }
 
-.page-btn:hover{
+.page-btn:hover {
     background-color: #777;
 }
 
-.page-btn:active{
+.page-btn:active {
     background-color: #aaa;
 }
 
-.page-btn a{
+.page-btn a {
     color: #fff;
 }
 
 /* ABOUT */
-.box{
+.box {
     background-color: #222;
     margin: 160px 10% 160px 10%;
     padding: 30px 10%;
     border-radius: 4px;
 }
 
-.box li{
+.box li {
     margin: 10px 0;
 }
 
-.about-menu{
+.about-menu {
     color: #fff;
 }
 
-.about-menu:hover{
+.about-menu:hover {
     color: #aaa;
 }
 
-.about-menu:active{
+.about-menu:active {
     color: #777;
 }
 
 /* profile */
-.f-container{
+.f-container {
     display: flex;
     list-style-type: none;
 }
 
-.f-item img{
+.f-item img {
     vertical-align: bottom;
 }
 
-.f-item{
+.f-item {
     flex-basis: 25%;
     filter: grayscale(100%);
 }
 
-.f-item:hover{
+.f-item:hover {
     filter: grayscale(0);
     opacity: 0.8;
 }
 
-.profiles{
+.profiles {
     position: relative;
 }
 
-.profile{
+.profile {
     display: none;
     width: 50%;
     position: absolute;
@@ -231,66 +235,74 @@ header nav li{
     padding: 20px;
 }
 
-.profile.active{
+.profile.active {
     display: block;
 }
 
-.profile-koukan, .profile-shonosuke, .profile-natsumi, .profile-sora{
+.profile-koukan,
+.profile-shonosuke,
+.profile-natsumi,
+.profile-sora {
     right: 0;
     top: 54px;
 }
 
-.profile-sota, .profile-yasuhiro, .profile-tetsuya, .profile-watnow{
+.profile-sota,
+.profile-yasuhiro,
+.profile-tetsuya,
+.profile-watnow {
     left: 0;
     top: 54px;
 }
 
-.profile h2{
+.profile h2 {
     font-size: 32px;
 }
 
-.close-btn{
+.close-btn {
     color: #fff;
 }
 
-.close-btn i{
+.close-btn i {
     right: 0;
 }
 
-.close-btn:hover{
+.close-btn:hover {
     color: #aaa;
 }
 
-.close-btn:active{
+.close-btn:active {
     color: #777;
 }
 
 
 /* CONTACT */
-.form-title{
+.form-title {
     font-size: 28px;
     padding-bottom: 10px;
 }
-.form-description{
+.form-description {
     padding-bottom: 15px;
     font-size: 12px;
 }
-.contact-form{
+.contact-form {
     background-color: #222;
     margin: 40px 10% 40px 10%;
     padding: 20px 30px;
     border-radius: 4px;
 }
-.form-q{
+.form-q {
     font-size:15px;
 }
-input{
+input {
     width: 50%;
 }
-textarea{
+textarea {
     width: 100%;
 }
-input, textarea, select{
+input,
+textarea,
+select {
     margin-top: 10px;
     margin-bottom: 30px;
     padding:10px;
@@ -300,18 +312,18 @@ input, textarea, select{
     font-size:16px;
     border-radius: 4px;
 }
-.form-address{
+.form-address {
     width: 80%;
 }
-.contact-submit{
+.contact-submit {
     background-color: #000;
     color: #fff;
     border: 1px solid #fff ;
     width: 100px;
 }
-.contact-submit:hover{
+.contact-submit:hover {
     background-color: #555;
 }
-.contact-submit:active{
+.contact-submit:active {
     background-color: #777;
 }
